@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "BLF 5300",
+    "type": "Cow",
+    "breed": "Brahman Cross",
+    "price": 335000,
+    "weight": 515,
+    "age": 3,
+    "location": "Dhaka",
+    "description": "Premium large size bull raised naturally. Excellent meat yield and health.",
+    "image": "https://images.unsplash.com/photo-1545468843-162858603610?q=80&w=1000&auto=format&fit=crop",
+    "category": "Large Animal"
+  },
+  {
+    "id": 2,
+    "name": "BLF 5299",
+    "type": "Cow",
+    "breed": "Mirzapur Red",
+    "price": 297000,
+    "weight": 401,
+    "age": 3,
+    "location": "Pabna",
+    "description": "Medium sized cattle, very well fed and maintained.",
+    "image": "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?q=80&w=1000&auto=format&fit=crop",
+    "category": "Medium Animal"
+  },
+  {
+    "id": 3,
+    "name": "BLF 5298",
+    "type": "Cow",
+    "breed": "Shahiwal",
+    "price": 395000,
+    "weight": 580,
+    "age": 4,
+    "location": "Bogura",
+    "description": "Large premium bull suitable for grand sacrifice.",
+    "image": "https://images.unsplash.com/photo-1527153749061-689408453e06?q=80&w=1000&auto=format&fit=crop",
+    "category": "Large Animal"
+  },
+  {
+    "id": 4,
+    "name": "BLF 5282",
+    "type": "Cow",
+    "breed": "Local Deshi",
+    "price": 286000,
+    "weight": 440,
+    "age": 3,
+    "location": "Sirajganj",
+    "description": "Healthy local breed bull with pristine health records.",
+    "image": "https://images.unsplash.com/photo-1507103011901-e94226c936c9?q=80&w=1000&auto=format&fit=crop",
+    "category": "Large Animal"
+  },
+  {
+    "id": 5,
+    "name": "BLF 5277",
+    "type": "Cow",
+    "breed": "Australian Cross",
+    "price": 420000,
+    "weight": 610,
+    "age": 4,
+    "location": "Dhaka",
+    "description": "Premium heavy weight bull with high meat conversion.",
+    "image": "https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=1000&auto=format&fit=crop",
+    "category": "Large Animal"
+  },
+  {
+    "id": 6,
+    "name": "BLF 5211",
+    "type": "Goat",
+    "breed": "Black Bengal",
+    "price": 35000,
+    "weight": 42,
+    "age": 2,
+    "location": "Kushtia",
+    "description": "High quality meat yield, fully matured goat.",
+    "image": "https://images.unsplash.com/photo-1524024973431-2ad916746881?q=80&w=1000&auto=format&fit=crop",
+    "category": "Small Animal"
+  }
+]
