@@ -1,18 +1,21 @@
 "use client";
 import Link from "next/link";
 import { authClient } from "@/lib/auth-client";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import toast from "react-hot-toast";
 
 const Navbar = () => {
   const { data: session, isPending } = authClient.useSession();
   const router = useRouter();
+  const pathname = usePathname();
 
   const handleLogout = async () => {
     await authClient.signOut();
     toast.success("Logged out successfully");
     router.push("/login");
   };
+
+  const isActive = (path) => pathname === path;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
@@ -22,12 +25,20 @@ const Navbar = () => {
           Qurbani<span className="text-yellow-500">Hat</span>
         </Link>
 
-
-        <div className="hidden md:flex items-center gap-8 text-[12px] font-black uppercase tracking-widest text-slate-600">
-          <Link href="/" className="hover:text-yellow-500 transition">Home</Link>
-          <Link href="/animals" className="hover:text-yellow-500 transition">All Animals</Link>
+        <div className="hidden md:flex items-center gap-8 text-[12px] font-black uppercase tracking-widest">
+          <Link 
+            href="/" 
+            className={`transition ${isActive("/") ? "text-yellow-500" : "text-slate-600 hover:text-yellow-500"}`}
+          >
+            Home
+          </Link>
+          <Link 
+            href="/animals" 
+            className={`transition ${isActive("/animals") ? "text-yellow-500" : "text-slate-600 hover:text-yellow-500"}`}
+          >
+            All Animals
+          </Link>
         </div>
-
 
         <div className="flex items-center gap-4">
           {!isPending && (
@@ -35,7 +46,7 @@ const Navbar = () => {
               {session ? (
                 <div className="flex items-center gap-4">
                   <Link href="/my-profile">
-                    <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-yellow-400 hover:scale-110 transition cursor-pointer">
+                    <div className={`w-10 h-10 rounded-full overflow-hidden border-2 hover:scale-110 transition cursor-pointer ${isActive("/my-profile") ? "border-slate-900" : "border-yellow-400"}`}>
                       <img 
                         src={session.user.image || `https://ui-avatars.com/api/?name=${session.user.name}`} 
                         alt="Profile" 
@@ -45,15 +56,25 @@ const Navbar = () => {
                   </Link>
                   <button 
                     onClick={handleLogout}
-                    className="text-[12px] font-black uppercase tracking-widest px-4 py-2 bg-slate-100 rounded-lg hover:bg-red-50 hover:text-red-600 transition"
+                    className="text-[12px] font-black bg-slate-900  uppercase tracking-widest px-4 py-2  rounded-lg hover:bg-red-50 hover:cursor-pointer hover:text-red-600 transition"
                   >
                     Logout
                   </button>
                 </div>
               ) : (
                 <div className="flex items-center gap-2">
-                  <Link href="/login" className="text-[12px] text-black uppercase tracking-widest px-4 py-2 hover:text-yellow-500 transition">Login</Link>
-                  <Link href="/register" className="text-[12px] font-black uppercase tracking-widest px-4 py-2 bg-slate-900 text-white rounded-lg hover:bg-yellow-500 transition shadow-md">Register</Link>
+                  <Link 
+                    href="/login" 
+                    className={`text-[12px] uppercase tracking-widest px-4 py-2 transition ${isActive("/login") ? "text-yellow-500 font-black" : "text-black hover:text-yellow-500"}`}
+                  >
+                    Login
+                  </Link>
+                  <Link 
+                    href="/register" 
+                    className={`text-[12px] font-black uppercase tracking-widest px-4 py-2 rounded-lg transition shadow-md ${isActive("/register") ? "bg-yellow-500 text-slate-900" : "bg-slate-900 text-white hover:bg-yellow-500"}`}
+                  >
+                    Register
+                  </Link>
                 </div>
               )}
             </>
