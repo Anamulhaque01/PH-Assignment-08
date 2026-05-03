@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# QurbaniHat – Livestock Booking Platform
 
-## Getting Started
+A modern, high-end livestock marketplace where users can explore, view, and book premium animals for Qurbani. The platform provides a seamless booking flow, secure user authentication, and a fully responsive interface across all devices.
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**[\[Insert Your Live URL Here\]](https://qurbanihat-puce.vercel.app/)**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📖 Purpose
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The primary purpose of **QurbaniHat** is to simplify the process of browsing and reserving livestock (such as cows and goats) for the Eid-ul-Adha sacrifice. It eliminates the traditional hassle of physical livestock markets by offering a clean, user-friendly digital marketplace with instant animal details, high-quality images, and a reliable authentication and booking flow.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Key Features
 
-## Learn More
+- **Elegant Responsive Design**: Tailored visual experience that scales beautifully across mobile, tablet, and desktop screens.
+- **Dynamic Animal Catalog**: Browse a rich collection of livestock with sorting capabilities by price to match specific budgets.
+- **Detailed Animal Profiles**: View comprehensive data including breed, age, weight, and location before making a decision.
+- **Authentication Flow**: Built-in login and registration systems with social authentication options (Google Login).
+- **Livestock Booking**: Submit inquiries securely via a dedicated booking form on private animal routes.
+- **Profile Management**: View logged-in user details and seamlessly update your profile name and display picture.
+- **Smooth UI Interactions**: Implemented loading states, dynamic toasts for notifications, and custom animations to elevate the user experience.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack & Packages Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Core Frameworks & Libraries
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **React** or **Next.js** (Single Page Application architecture)
+- **Better Auth** (Authentication management and session controls)
 
-## Deploy on Vercel
+### NPM Packages Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Better Auth Client**: For interacting with the user session and updating user details securely.
+- **React Router DOM**: To handle routing across public and private pages without page-reload errors.
+- **React Toasts (e.g., react-hot-toast / react-toastify)**: For real-time, high-contrast success and error notifications.
+- **[Insert chosen animation package e.g., Animate.css, Lottie-React, or React-Spring]**: To add fluid interactions and visual polished effects.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
