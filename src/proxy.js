@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
-export function middleware(request) {
+
+export function proxy(request) {
 
     const sessionToken =
         request.cookies.get("better-auth.session_token") ||
@@ -8,17 +9,13 @@ export function middleware(request) {
 
     const { pathname } = request.nextUrl;
 
-
-
     const isPrivateRoute =
         (pathname.startsWith("/animals/") && pathname !== "/animals") ||
         pathname.startsWith("/my-profile");
 
-
     if (isPrivateRoute && !sessionToken) {
         return NextResponse.redirect(new URL("/login", request.url));
     }
-
 
     if (sessionToken && (pathname === "/login" || pathname === "/register")) {
         return NextResponse.redirect(new URL("/", request.url));
@@ -28,7 +25,6 @@ export function middleware(request) {
 }
 
 export const config = {
-
     matcher: [
         "/animals/:id+",
         "/my-profile/:path*"
