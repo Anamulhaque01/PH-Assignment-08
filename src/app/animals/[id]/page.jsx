@@ -1,6 +1,7 @@
     "use client";
     import { useState, useEffect, React } from 'react';
     import animals from '../../../../public/data/animals.json';
+    export const dynamic = 'force-dynamic';
 
     export default function Details({ params }) {
     const [animal, setAnimal] = useState(null);
