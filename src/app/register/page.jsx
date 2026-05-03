@@ -79,7 +79,7 @@ export default function RegisterPage() {
             {errors.password && <p className="text-red-500 text-[11px] mt-1 ml-1 font-bold">{errors.password.message}</p>}
           </div>
 
-          <button className="w-full bg-slate-900 text-white p-3.5 rounded-xl font-extrabold text-sm uppercase tracking-wider hover:bg-slate-800 transition shadow-md mt-6">
+          <button className="w-full bg-slate-900 text-white p-3.5 rounded-xl font-extrabold text-sm uppercase tracking-wider hover:bg-slate-800 transition shadow-md mt-6 hover:cursor-pointer">
             Register Now
           </button>
         </form>

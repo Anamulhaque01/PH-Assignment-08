@@ -87,25 +87,25 @@
                     type="text" 
                     placeholder="Full Name" 
                     required 
-                    className="w-full p-3.5 border border-gray-300 bg-white rounded-lg text-xs font-bold outline-none uppercase tracking-wide focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition"
+                    className="w-full p-3.5 border border-gray-300 text-gray-600 bg-white rounded-lg text-xs font-bold outline-none uppercase tracking-wide focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition"
                     />
                     <input 
                     type="email" 
                     placeholder="Email Address" 
                     required 
-                    className="w-full p-3.5 border border-gray-300 bg-white rounded-lg text-xs font-bold outline-none tracking-wide focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition"
+                    className="w-full p-3.5 border border-gray-300 text-gray-600 bg-white rounded-lg text-xs font-bold outline-none tracking-wide focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition"
                     />
                     <input 
                     type="tel" 
                     placeholder="Phone Number" 
                     required 
-                    className="w-full p-3.5 border border-gray-300 bg-white rounded-lg text-xs font-bold outline-none uppercase tracking-wide focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition"
+                    className="w-full p-3.5 border border-gray-300 text-gray-600 bg-white rounded-lg text-xs font-bold outline-none uppercase tracking-wide focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition"
                     />
                     <textarea 
                     placeholder="Delivery Address" 
                     required 
                     rows="4" 
-                    className="w-full p-3.5 border border-gray-300 bg-white rounded-lg text-xs font-bold outline-none uppercase tracking-wide focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition"
+                    className="w-full p-3.5 border border-gray-300 text-gray-600 bg-white rounded-lg text-xs font-bold outline-none uppercase tracking-wide focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition"
                     ></textarea>
                     <button 
                     type="submit" 
