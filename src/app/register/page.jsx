@@ -37,46 +37,46 @@ export default function RegisterPage() {
 
         <form className="space-y-4" onSubmit={handleSubmit(handleRegister)}>
           <div>
-            <label className="block text-[10px] font-black text-slate-700 uppercase tracking-widest mb-1 ml-1">Full Name</label>
+            <label className="block text-[11px] font-black text-slate-700 uppercase tracking-widest mb-1 ml-1">Full Name</label>
             <input 
               {...register("name", { required: "Name field is required" })} 
               placeholder="John Doe" 
-              className="w-full border p-3.5 rounded-xl bg-slate-50 text-xs font-bold outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 uppercase tracking-wide transition" 
+              className="w-full border p-3.5 rounded-xl text-gray-700 bg-slate-50 text-xs font-bold outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 uppercase tracking-wide transition" 
             />
-            {errors.name && <p className="text-red-500 text-[10px] mt-1 ml-1 font-bold">{errors.name.message}</p>}
+            {errors.name && <p className="text-red-500 text-[11px] mt-1 ml-1 font-bold">{errors.name.message}</p>}
           </div>
 
           <div>
-            <label className="block text-[10px] font-black text-slate-700 uppercase tracking-widest mb-1 ml-1">Email</label>
+            <label className="block text-[11px] font-black text-slate-700 uppercase tracking-widest mb-1 ml-1">Email</label>
             <input 
               {...register("email", { required: "Email field is required" })} 
               placeholder="email@example.com" 
               type="email"
-              className="w-full border p-3.5 rounded-xl bg-slate-50 text-xs font-bold outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 tracking-wide transition" 
+              className="w-full border p-3.5 rounded-xl text-gray-700 bg-slate-50 text-xs font-bold outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 tracking-wide transition" 
             />
             {errors.email && <p className="text-red-500 text-[10px] mt-1 ml-1 font-bold">{errors.email.message}</p>}
           </div>
 
           <div>
-            <label className="block text-[10px] font-black text-slate-700 uppercase tracking-widest mb-1 ml-1">Photo URL</label>
+            <label className="block text-[11px] font-black text-slate-700 uppercase tracking-widest mb-1 ml-1">Photo URL</label>
             <input 
               {...register("photoUrl", { required: "Photo URL is required" })} 
               placeholder="https://images.com/avatar.png" 
               type="url"
-              className="w-full border p-3.5 rounded-xl bg-slate-50 text-xs font-bold outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 tracking-wide transition" 
+              className="w-full border p-3.5 rounded-xl text-gray-700 bg-slate-50 text-xs font-bold outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 tracking-wide transition" 
             />
             {errors.photoUrl && <p className="text-red-500 text-[10px] mt-1 ml-1 font-bold">{errors.photoUrl.message}</p>}
           </div>
 
           <div>
-            <label className="block text-[10px] font-black text-slate-700 uppercase tracking-widest mb-1 ml-1">Password</label>
+            <label className="block text-[11px] font-black text-slate-700 uppercase tracking-widest mb-1 ml-1">Password</label>
             <input 
               {...register("password", { required: "Password field is required" })} 
               type="password" 
               placeholder="••••••••" 
-              className="w-full border p-3.5 rounded-xl bg-slate-50 text-xs font-bold outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 tracking-wide transition" 
+              className="w-full border p-3.5 rounded-xl text-gray-700 bg-slate-50 text-xs font-bold outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 tracking-wide transition" 
             />
-            {errors.password && <p className="text-red-500 text-[10px] mt-1 ml-1 font-bold">{errors.password.message}</p>}
+            {errors.password && <p className="text-red-500 text-[11px] mt-1 ml-1 font-bold">{errors.password.message}</p>}
           </div>
 
           <button className="w-full bg-slate-900 text-white p-3.5 rounded-xl font-extrabold text-sm uppercase tracking-wider hover:bg-slate-800 transition shadow-md mt-6">

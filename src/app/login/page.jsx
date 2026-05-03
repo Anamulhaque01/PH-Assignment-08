@@ -54,13 +54,13 @@ export default function LoginPage() {
 
         <form className="space-y-4" onSubmit={handleSubmit(handleLoginFunc)}>
           <div>
-            <label className="block text-[10px] font-black text-slate-700 uppercase tracking-widest mb-1 ml-1">
+            <label className="block text-[11px] font-black text-slate-700 uppercase tracking-widest mb-1 ml-1">
               Email Address
             </label>
             <input
               type="email"
               placeholder="email@example.com"
-              className="w-full border p-3.5 rounded-xl bg-slate-50 text-xs font-bold outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 tracking-wide transition"
+              className="w-full border p-3.5 rounded-xl text-gray-700  text-xs font-bold outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 tracking-wide transition"
               {...register("email", { required: "Email field is required" })}
             />
             {errors.email && (
@@ -71,13 +71,13 @@ export default function LoginPage() {
           </div>
 
           <div className="relative">
-            <label className="block text-[10px] font-black text-slate-700 uppercase tracking-widest mb-1 ml-1">
+            <label className="block text-[11px] font-black text-slate-700 uppercase tracking-widest mb-1 ml-1">
               Password
             </label>
             <input
               type={isShowPassword ? "text" : "password"}
               placeholder="••••••••"
-              className="w-full border p-3.5 rounded-xl bg-slate-50 text-xs font-bold outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 tracking-wide transition"
+              className="w-full border p-3.5 rounded-xl bg-slate-50 text-gray-700 text-xs font-bold outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 tracking-wide transition"
               {...register("password", { required: "Password field is required" })}
             />
             <button
@@ -96,7 +96,7 @@ export default function LoginPage() {
 
           <button
             type="submit"
-            className="w-full bg-slate-900 text-white p-3.5 rounded-xl font-extrabold text-sm uppercase tracking-wider hover:bg-slate-800 transition shadow-md mt-6"
+            className="w-full bg-slate-900 text-white p-3.5 rounded-xl font-extrabold text-sm uppercase tracking-wider hover:bg-slate-800 transition shadow-md mt-6 hover:cursor-pointer"
           >
             Sign In
           </button>
@@ -107,7 +107,7 @@ export default function LoginPage() {
           <div className="absolute inset-0 flex items-center">
             <span className="w-full border-t border-gray-100"></span>
           </div>
-          <div className="relative flex justify-center text-[10px] uppercase font-black">
+          <div className="relative flex justify-center text-[11px] uppercase font-black">
             <span className="bg-white px-2 text-gray-400">Or continue with</span>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default function LoginPage() {
         <button
           onClick={handleGoogleLogin}
           type="button"
-          className="w-full border border-gray-200 p-3.5 rounded-xl font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-slate-50 transition mb-6"
+          className="w-full border text-black border-gray-200 p-3.5 rounded-xl font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-slate-50 transition mb-6 hover:cursor-pointer"
         >
           <FaGoogle className="text-red-500" /> Google Login
         </button>
