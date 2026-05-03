@@ -1,16 +1,22 @@
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import './globals.css';
+
+import Navbar from "@/components/Navbar";
+import "./globals.css";
+import { Toaster } from "react-hot-toast";
+import Footer from "@/components/Footer";
+
+export const metadata = {
+  title: "QurbaniHat - Livestock Booking Platform",
+  description: "A modern livestock marketplace",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-white text-slate-900 font-sans selection:bg-green-100">
-        <Navbar />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
+      <body className="bg-slate-50 antialiased min-h-screen text-slate-800">
+        <Navbar></Navbar>
+        {children}
+        <Toaster />
+        <Footer></Footer>
       </body>
     </html>
   );

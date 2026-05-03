@@ -7,8 +7,8 @@ export default function Footer() {
         <div className="md:col-span-5 flex flex-col justify-between h-full">
           <div>
             <span className="text-2xl font-black tracking-tight flex items-center mb-4">
-              <span className="bg-yellow-400 text-slate-900 px-2 py-0.5 rounded-l font-extrabold select-none">BENGAL</span>
-              <span className="bg-slate-900 text-white px-2 py-0.5 rounded-r font-extrabold select-none">MEAT</span>
+              <span className="bg-yellow-400 text-slate-900 px-2 py-0.5 rounded-l font-extrabold select-none">QURBANI</span>
+              <span className="bg-slate-900 text-white px-2 py-0.5 rounded-r font-extrabold select-none">HAT</span>
             </span>
             <p className="text-sm font-semibold text-gray-600 mb-6 max-w-sm uppercase tracking-wide">
               Bengal Meat Processing Industries Ltd. is a world-class meat industry, producing safe, wholesome products that are of the highest quality.
