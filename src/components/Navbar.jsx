@@ -36,8 +36,8 @@ export default function Navbar() {
             </span>
           </Link>
           <nav className="hidden lg:flex items-center gap-8">
-            <Link href="/" className="text-sm font-bold text-gray-800 hover:text-yellow-500 border-b-2 border-transparent hover:border-yellow-500 pb-1 transition uppercase tracking-wide">Home [cite: 130]</Link>
-            <Link href="/animals" className="text-sm font-bold text-gray-800 hover:text-yellow-500 border-b-2 border-transparent hover:border-yellow-500 pb-1 transition uppercase tracking-wide">All Animals [cite: 130]</Link>
+            <Link href="/" className="text-sm font-bold text-gray-800 hover:text-yellow-500 border-b-2 border-transparent hover:border-yellow-500 pb-1 transition uppercase tracking-wide">Home</Link>
+            <Link href="/animals" className="text-sm font-bold text-gray-800 hover:text-yellow-500 border-b-2 border-transparent hover:border-yellow-500 pb-1 transition uppercase tracking-wide">All Animals</Link>
           </nav>
         </div>
         
@@ -56,7 +56,7 @@ export default function Navbar() {
                 onClick={handleLogout}
                 className="text-xs md:text-sm font-black px-5 py-2.5 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition uppercase tracking-wider"
               >
-                Logout [cite: 131, 240]
+                Logout 
               </button>
             </div>
           ) : (
