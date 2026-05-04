@@ -26,14 +26,14 @@ const Navbar = () => {
         </Link>
 
         <div className="hidden md:flex items-center gap-8 text-[12px] font-black uppercase tracking-widest">
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className={`transition ${isActive("/") ? "text-yellow-500" : "text-slate-600 hover:text-yellow-500"}`}
           >
             Home
           </Link>
-          <Link 
-            href="/animals" 
+          <Link
+            href="/animals"
             className={`transition ${isActive("/animals") ? "text-yellow-500" : "text-slate-600 hover:text-yellow-500"}`}
           >
             All Animals
@@ -47,30 +47,30 @@ const Navbar = () => {
                 <div className="flex items-center gap-4">
                   <Link href="/my-profile">
                     <div className={`w-10 h-10 rounded-full overflow-hidden border-2 hover:scale-110 transition cursor-pointer ${isActive("/my-profile") ? "border-slate-900" : "border-yellow-400"}`}>
-                      <img 
-                        src={session.user.image || `https://ui-avatars.com/api/?name=${session.user.name}`} 
-                        alt="Profile" 
+                      <img
+                        src={session.user.image || `https://ui-avatars.com/api/?name=${session.user.name}`}
+                        alt="Profile"
                         className="w-full h-full object-cover"
                       />
                     </div>
                   </Link>
-                  <button 
+                  <button
                     onClick={handleLogout}
-                    className="text-[12px] font-black bg-slate-900  uppercase tracking-widest px-4 py-2  rounded-lg hover:bg-red-50 hover:cursor-pointer hover:text-red-600 transition"
+                    className="text-[12px]  bg-slate-900  uppercase tracking-widest px-4 py-2  rounded-lg hover:bg-red-50 hover:cursor-pointer hover:text-red-600 transition"
                   >
                     Logout
                   </button>
                 </div>
               ) : (
                 <div className="flex items-center gap-2">
-                  <Link 
-                    href="/login" 
+                  <Link
+                    href="/login"
                     className={`text-[12px] uppercase tracking-widest px-4 py-2 transition ${isActive("/login") ? "text-yellow-500 font-black" : "text-black hover:text-yellow-500"}`}
                   >
                     Login
                   </Link>
-                  <Link 
-                    href="/register" 
+                  <Link
+                    href="/register"
                     className={`text-[12px] font-black uppercase tracking-widest px-4 py-2 rounded-lg transition shadow-md ${isActive("/register") ? "bg-yellow-500 text-slate-900" : "bg-slate-900 text-white hover:bg-yellow-500"}`}
                   >
                     Register
